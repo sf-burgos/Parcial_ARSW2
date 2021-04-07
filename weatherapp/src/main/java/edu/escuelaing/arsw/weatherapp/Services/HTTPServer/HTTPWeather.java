@@ -7,6 +7,9 @@ import org.json.JSONObject;
 import com.mashape.unirest.http.HttpResponse;
 import org.springframework.stereotype.Service;
 
+/**
+ * The type Http weather.
+ */
 @Service
 public class HTTPWeather implements IHTTPWeather {
 

@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css" />
 
 </head>
 <body>
+    <header class="text-center">
+        <h1>Weather Application</h1>
+    </header>
+    <div class="input-group m-4">
+        <input type="text" class="form-control" placeholder="Ciudad" id="ciudad">
+        <button class="btn btn-primary" type="button" onclick="app.consultarClima(ciudad.value)">Buscar</button>
+    </div>
+    <table class="table" id="infotable">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col" id="ciudadname">Ciudad</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/apiclient.js"></script>
 </body>
 </html>
