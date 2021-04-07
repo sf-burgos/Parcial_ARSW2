@@ -34,6 +34,7 @@ app = (function (){
                         </td>
                     </tr>`
         $("#infotable > tbody").append(fila);
+        initMap([jsondata]);
     }
 
     return{
