@@ -46,7 +46,18 @@ AJUSTE LOS DIAGRAMAS DE ARQUITECTURA QUE SEAN NECESARIOS PARA REFLEJAR LAS DESIC
 1. La aplicación funcionando en Heroku con el nombre (APELLIDO-ARSW-T2) y el código fuente almacenado en un proyecto GitHub con el nombre (APELLIDO-ARSW-T2).
 2. Los fuentes deben estar documentados y bien estructurados para generar el Javadoc.
 3. El Readme.md debe describir el diseño, la forma de ejecutar el progrema localmente, explicar cómo se puede extender y cómo podría, por ejemplo, hacer que una función específica la implementara un proveedor de servicios diferente.
-4. Indique la urls de Github, Heroku
+
+Como el proyecto ha sido desarrollado implementando el principio de inyección de dependencias, es facil realizar una extensión,
+se pueden incluir más servicios que implementen las interfaces existentes y mediante el uso de las anotaciones que nos brinda springboot
+podemos diferenciar dichos servicios facilmente, de igual manera se pueden crear nuevas interfaces que provean nuevos servicios y 
+contrubuyan al funcionamiento de la aplicación. 
+
+Consumir servicios brindados por otros proovedores no implica mayor esfuerzo, pues al tener la capa de servicios encargada de consumir 
+las API externas, se facilita la creación de nuevos metodos que obtengan la información y la adecuen a el diseño planteado para este proyecto.   
+
+
+
+4. Indique la urls de Github, Heroku 
 5. Suba el zip del proyecto al aula con el nombre (APELLIDO-ARSW-T2).
 6. Guarde una copia de su proyecto.
 
@@ -56,6 +67,8 @@ AJUSTE LOS DIAGRAMAS DE ARQUITECTURA QUE SEAN NECESARIOS PARA REFLEJAR LAS DESIC
 2. Servidor fachada exponiendo servicios REST (10%)
 3. Conexión a servicios externos (10%)
 4. Cliente Java para Tests concurrentes  para el servicio en Heroku y para el del proveedor externo(10%)
+## Enlace heroku
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://https://brayan-burgos-arsw-t2.herokuapp.com/)
 5. Cache tolerante a la concurrencia y una sola instancia para la aplicación (10%)
 6. Implementa la funcionalidad de los mapas de manera asíncrona (15%)
 7. Diseño y descripción del diseño son de alta calidad (30%)
