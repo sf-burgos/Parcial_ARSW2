@@ -1,7 +1,6 @@
 package edu.escuelaing.arsw.weatherapp.cache;
 
-import javafx.util.Pair;
-import jdk.nashorn.internal.ir.CaseNode;
+import org.javatuples.Pair;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +31,7 @@ public class WeatherCache implements IWeatherCache {
     }
     @Override
     public JSONObject getData(String name){
-        return cache.get(name).getValue();
+        return cache.get(name).getValue1();
 
     }
     @Override
@@ -51,7 +50,7 @@ public class WeatherCache implements IWeatherCache {
 
     @Override
     public Date getCreationDate(String name){
-        return cache.get(name).getKey();
+        return cache.get(name).getValue0();
 
     }
 
