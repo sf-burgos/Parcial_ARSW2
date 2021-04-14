@@ -74,7 +74,7 @@ las API externas, se facilita la creación de nuevos metodos que obtengan la inf
 3. Conexión a servicios externos (10%)
 4. Cliente Java para Tests concurrentes  para el servicio en Heroku y para el del proveedor externo(10%)
 ## Enlace heroku
-[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://https://brayan-burgos-arsw-t2.herokuapp.com/)
+[![Deployed to Heroku](www.herokucdn.com/deploy/button.png)](https://https://brayan-burgos-arsw-t2.herokuapp.com/)
 
 5. Cache tolerante a la concurrencia y una sola instancia para la aplicación (10%)
 6. Implementa la funcionalidad de los mapas de manera asíncrona (15%)
